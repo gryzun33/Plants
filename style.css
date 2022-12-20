@@ -2,4 +2,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.header {
+  height: 134px;
+  background-color: #edf2ec;
+}
+.header__wrapper {
+  display: flex;
+  max-width: 1440px;
+  padding-left: 109px;
+  padding-right: 109px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-left: 111px;
+}
+.header__wrapper .logo {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 52px;
+}
+.header__wrapper .logo__title {
+  font-family: "Inika";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 5px;
+}
+.header__wrapper .nav {
+  padding-top: 42px;
+  width: 452px;
+  line-height: 50px;
+}
+.header__wrapper .nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */
