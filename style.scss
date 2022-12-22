@@ -22,6 +22,11 @@ $color-nav: #010201;
 	box-sizing: border-box;	
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .header {
   height: 134px;
   background-color: $color-bg;
@@ -51,6 +56,7 @@ $color-nav: #010201;
       padding-top: 42px;
       width: 452px;
       line-height: 50px;
+      color: $color-nav;
       // display: flex;
       // align-items: center;
 
@@ -58,7 +64,80 @@ $color-nav: #010201;
         display: flex;
         justify-content: space-between;
         list-style-type: none;
+        font-family: 'Inika';
+        font-weight: 400;
+        font-size: 16px;
+
+        li:first-child {
+          color: $color-tx-brown;
+          font-weight: 700;
+        }
       }
     }
   }
+}
+
+.welcome {
+  height: 532px;
+  background-color: $color-bg;
+
+  &__wrapper {
+    @include wrapper;
+    padding-top: 62px;        
+  }
+
+  &__image {
+    width: 449px;
+    height: 407px;
+
+    img {
+      transform: translate(-10px, -10px);
+    }
+  }
+
+  .welcome-content {
+    padding-top: 36px;
+    width: 549px;
+
+    &__title {
+      font-family: 'Inter';
+      font-weight: 700;
+      color: $color-tx-lgray;
+      font-size: 45px;
+      line-height: 50px;
+
+      & span {
+        color: $color-tx-green;
+      }
+    }
+
+    &__text {
+      font-family: 'Inter';
+      font-weight: 400;
+      color: $color-tx-dgray;
+      font-size: 20px;
+      line-height: 35px;
+      margin-top: 42px;
+    }
+
+    &__button {
+      display: flex;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 16px;
+      color: $color-black;
+      width: 158px;
+      height: 44px;
+      border: 2px solid $color-tx-brown;
+      border-radius: 10px;
+      margin-top: 48px;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+
+  
 }
