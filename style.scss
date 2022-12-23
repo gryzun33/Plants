@@ -266,3 +266,73 @@ body {
     }
   }
 }
+
+.prices {
+  height: 560px;
+
+  .prices-wrapper {
+    @include wrapper;
+    padding-top: 40px;
+
+    .prices-title {
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      color: $color-black;
+    }
+
+    .prices-list {
+      width: 332px;
+      height: 282px;
+      border: 1px solid $color-border;
+      border-radius: 20px;
+      margin-top: 60px;
+    }
+
+
+
+    .prices-help {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .prices-subtitle {
+        width: 452px;
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: right;
+        
+        span {
+          color: $color-tx-green;
+        }
+      }
+
+      .prices-button {
+        width: 162px;
+        height: 50px;
+        border: 1px solid $color-tx-brown;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inika';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-tx-brown;
+        text-decoration: none;
+        margin-top: 38px;
+        padding-right: 3px;
+      }
+
+      .prices-image {
+        margin-top: 35px;
+        transform: translateX(9px);
+      }
+    
+    }
+  }
+}
