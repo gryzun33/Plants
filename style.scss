@@ -135,9 +135,106 @@ body {
       justify-content: center;
       align-items: center;
     }
-  }
+  }  
+}
 
-
-
+.about {
+  height: 666px;
   
+  &__wrapper {
+    @include wrapper;
+    padding-top: 93px;
+
+    .about-content {
+      padding-top: 68px;
+
+      &__title {
+        width: 463px;
+        font-family: 'Inika';
+        font-weight: 400;
+        font-size: 40px;
+        color: $color-tx-green;
+        line-height: 52px;
+        
+        span { 
+          color: $color-tx-brown;
+        }
+      }
+
+      &__text {
+        width: 605px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $color-black;
+        color: $color-tx-dgray;
+        margin-top: 38px;
+      }
+    }
+  }
+}
+
+.service {
+  height: 1300px;
+  background-color: $color-bg;
+
+  .service-wrapper {
+    @include wrapper;
+    display: block;
+
+    .title-buttons-box {
+      display: flex;
+      padding-top: 40px;
+
+      .service-title {
+        width: 306px;
+        font-family: 'Inika';
+        font-weight: 400;
+        font-size: 40px;
+        color: $color-tx-green;
+        line-height: 52px;
+      }
+
+      .service-buttons {
+        margin-left: 142px;
+        padding-top: 29px;
+        width: 559px;
+        display: flex;
+        justify-content: space-between;
+
+        &__button {
+          width: 161px;
+          height: 50px;
+          border: 1px solid $color-tx-brown;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Inika';
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;
+          color: $color-tx-brown;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      margin-top: 80px;
+      height: 955px;
+
+      .service-card {
+        width: 330px;
+        height: 450px;
+        border: 1px solid black;
+      }
+
+    }
+  }
 }

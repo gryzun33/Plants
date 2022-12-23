@@ -109,4 +109,102 @@ body {
   text-decoration: none;
   justify-content: center;
   align-items: center;
+}
+
+.about {
+  height: 666px;
+}
+.about__wrapper {
+  display: flex;
+  max-width: 1440px;
+  padding-left: 109px;
+  padding-right: 109px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 93px;
+}
+.about__wrapper .about-content {
+  padding-top: 68px;
+}
+.about__wrapper .about-content__title {
+  width: 463px;
+  font-family: "Inika";
+  font-weight: 400;
+  font-size: 40px;
+  color: #499A18;
+  line-height: 52px;
+}
+.about__wrapper .about-content__title span {
+  color: #E06733;
+}
+.about__wrapper .about-content__text {
+  width: 605px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  color: #636060;
+  margin-top: 38px;
+}
+
+.service {
+  height: 1300px;
+  background-color: #edf2ec;
+}
+.service .service-wrapper {
+  display: flex;
+  max-width: 1440px;
+  padding-left: 109px;
+  padding-right: 109px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: block;
+}
+.service .service-wrapper .title-buttons-box {
+  display: flex;
+  padding-top: 40px;
+}
+.service .service-wrapper .title-buttons-box .service-title {
+  width: 306px;
+  font-family: "Inika";
+  font-weight: 400;
+  font-size: 40px;
+  color: #499A18;
+  line-height: 52px;
+}
+.service .service-wrapper .title-buttons-box .service-buttons {
+  margin-left: 142px;
+  padding-top: 29px;
+  width: 559px;
+  display: flex;
+  justify-content: space-between;
+}
+.service .service-wrapper .title-buttons-box .service-buttons__button {
+  width: 161px;
+  height: 50px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inika";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  text-decoration: none;
+}
+.service .service-wrapper .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 80px;
+  height: 955px;
+}
+.service .service-wrapper .service-cards .service-card {
+  width: 330px;
+  height: 450px;
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
