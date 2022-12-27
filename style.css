@@ -317,4 +317,60 @@ body {
 .prices .prices-wrapper .prices-help .prices-image {
   margin-top: 35px;
   transform: translateX(9px);
+}
+
+.contacts {
+  height: 550px;
+  background-color: #edf2ec;
+}
+.contacts .contacts-wrapper {
+  display: flex;
+  max-width: 1440px;
+  padding-left: 109px;
+  padding-right: 109px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.contacts .contacts-wrapper .contacts-woman {
+  padding-top: 53px;
+}
+.contacts .contacts-wrapper .contacts-title {
+  font-family: "Inika";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  margin-top: 60px;
+  padding-left: 43px;
+}
+.contacts .contacts-wrapper .contacts-city-box {
+  width: 450px;
+  height: 50px;
+  margin-top: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 35px;
+  background: #d6e7d2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contacts .contacts-wrapper .contacts-city-box .contacts-city {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: #717171;
+}
+.contacts .contacts-wrapper .contacts-city-box .contacts-city-btn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #aea1a1;
+  text-align: center;
+}
+.contacts .contacts-wrapper .contacts-city-box .contacts-city-btn span {
+  color: white;
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */
