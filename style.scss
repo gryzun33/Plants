@@ -288,6 +288,32 @@ body {
       border: 1px solid $color-border;
       border-radius: 20px;
       margin-top: 60px;
+      padding: 34px 41px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__item {
+        list-style-type: none;
+        background: $color-bg;
+        border-radius: 20px;
+        width: 250px;
+        height: 50px;        
+        padding: 16px 40px;
+        display: flex;
+        justify-content: space-between;
+
+        .item-text {
+          font-family: 'Inter';
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 20px;
+          color: $color-black;
+        }
+      }
+
+
+    
     }
 
 
