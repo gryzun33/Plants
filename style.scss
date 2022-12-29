@@ -8,6 +8,7 @@ $color-tx-dgray:#636060;
 $color-nav: #010201;
 $color-border: #e3e1d5;
 $color-bg-btn: #aea1a1;
+$color-bg-btn-light: #d9d9d9;
 
 @mixin wrapper {
 	display: flex;
@@ -16,6 +17,13 @@ $color-bg-btn: #aea1a1;
 	padding-right:109px;
 	margin: 0 auto;
 	justify-content: space-between;	
+}
+
+@mixin btn-dropdown {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 * {
@@ -311,6 +319,16 @@ body {
           line-height: 20px;
           color: $color-black;
         }
+
+        .item-btn {
+          @include btn-dropdown;
+          background-color: $color-bg-btn-light ;
+
+          span {
+            color: $color-tx-lgray;
+            font-size: 10px;
+          }
+        }
       }    
     }
 
@@ -365,7 +383,6 @@ body {
 
   .contacts-wrapper {
     @include wrapper;
-    // justify-content: flex-start;
 
     .contacts-woman {
       padding-top: 53px;
@@ -404,12 +421,9 @@ body {
       }
 
       .contacts-city-btn {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
+        @include btn-dropdown;
         background-color: $color-bg-btn;
-        text-align: center;
-
+    
         span {
           color: white;
           font-size: 10px;
@@ -417,4 +431,47 @@ body {
       }
     }
   }
+}
+
+.footer {
+  height: 130px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: $color-black;
+
+  .footer-wrapper {
+    @include wrapper;
+    height: 100%;
+    align-items: center;
+
+
+    .footer-author {
+      width: 182px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }  
+
+    a:visited {
+      color: inherit;
+    }
+
+    .footer-links {
+      width: 188px;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      align-items: center;
+
+      li {
+        height: 32px;
+      }
+
+    }
+
+  }
+
 }
