@@ -32,6 +32,10 @@ $color-bg-btn-light: #d9d9d9;
 	box-sizing: border-box;	
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -82,7 +86,27 @@ body {
           color: $color-tx-brown;
           font-weight: 700;
         }
+
+        li {
+          transition: transform 0.5s;
+        }
+
+        li:hover {
+          transform: scale(1.1);
+        }
       }
+
+      a:visited {
+        color: inherit;
+      }
+      
+      a:link {
+        color: inherit;
+      }
+      
+
+      
+       
     }
   }
 }
@@ -144,7 +168,15 @@ body {
       text-decoration: none;
       justify-content: center;
       align-items: center;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $color-tx-brown;
+        color: white;
+      }
     }
+
+    
   }  
 }
 
@@ -226,6 +258,12 @@ body {
           line-height: 26px;
           color: $color-tx-brown;
           text-decoration: none;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: $color-tx-brown;
+            color: white;
+          }
         }
       }
     }
@@ -311,6 +349,7 @@ body {
         padding: 16px 40px;
         display: flex;
         justify-content: space-between;
+        transition: transform 0.3s;
 
         .item-text {
           font-family: 'Inter';
@@ -328,6 +367,11 @@ body {
             color: $color-tx-lgray;
             font-size: 10px;
           }
+        }
+
+        &:hover {
+          cursor:pointer;
+          transform: translateY(-2px);
         }
       }    
     }
@@ -366,6 +410,15 @@ body {
         text-decoration: none;
         margin-top: 38px;
         padding-right: 3px;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $color-tx-brown;
+          color: white;
+          cursor: pointer;
+        }
+
+
       }
 
       .prices-image {
@@ -410,6 +463,12 @@ body {
       padding-right: 35px;
       background: $color-bg-contacts;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-2px);
+      }
 
       .contacts-city {
         font-family: 'Inter';
@@ -446,17 +505,26 @@ body {
     height: 100%;
     align-items: center;
 
-
     .footer-author {
       width: 182px;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }  
+     
+   
+    }
+
+    a {
+      transition: color 0.3s;
+    }
+
 
     a:visited {
       color: inherit;
+    }
+
+    a:hover {
+      color: $color-tx-green;
     }
 
     .footer-links {
@@ -468,6 +536,12 @@ body {
 
       li {
         height: 32px;
+        transition: transform 0.3s;
+      }
+
+      li:hover {
+        transform: scale(1.1);
+        cursor: pointer;
       }
 
     }
@@ -475,3 +549,4 @@ body {
   }
 
 }
+
