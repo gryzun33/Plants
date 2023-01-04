@@ -17,6 +17,11 @@ body {
   height: 134px;
   background-color: #edf2ec;
 }
+@media screen and (max-width: 1200px) {
+  .header {
+    height: 117px;
+  }
+}
 .header__wrapper {
   display: flex;
   max-width: 1440px;
@@ -24,12 +29,22 @@ body {
   padding-right: 109px;
   margin: 0 auto;
   justify-content: space-between;
-  padding-left: 111px;
+}
+@media screen and (max-width: 1200px) {
+  .header__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .header__wrapper .logo {
   display: flex;
   justify-content: flex-start;
   padding-top: 52px;
+}
+@media screen and (max-width: 1200px) {
+  .header__wrapper .logo {
+    padding-top: 45px;
+  }
 }
 .header__wrapper .logo__title {
   font-family: "Inika";
@@ -43,6 +58,11 @@ body {
   width: 452px;
   line-height: 50px;
   color: #010201;
+}
+@media screen and (max-width: 1200px) {
+  .header__wrapper .nav {
+    padding-top: 35px;
+  }
 }
 .header__wrapper .nav__list {
   display: flex;
@@ -73,6 +93,11 @@ body {
   height: 532px;
   background-color: #edf2ec;
 }
+@media screen and (max-width: 1200px) {
+  .welcome {
+    height: auto;
+  }
+}
 .welcome__wrapper {
   display: flex;
   max-width: 1440px;
@@ -82,16 +107,46 @@ body {
   justify-content: space-between;
   padding-top: 62px;
 }
+@media screen and (max-width: 1200px) {
+  .welcome__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .welcome__wrapper {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    flex-direction: row-reverse;
+  }
+}
 .welcome__image {
   width: 449px;
   height: 407px;
 }
+@media screen and (max-width: 1200px) {
+  .welcome__image {
+    width: 42%;
+    height: auto;
+  }
+}
 .welcome__image img {
   transform: translate(-10px, -10px);
+}
+@media screen and (max-width: 1200px) {
+  .welcome__image img {
+    width: 100%;
+  }
 }
 .welcome .welcome-content {
   padding-top: 36px;
   width: 549px;
+}
+@media screen and (max-width: 1200px) {
+  .welcome .welcome-content {
+    padding-top: 0px;
+    width: 52%;
+  }
 }
 .welcome .welcome-content__title {
   font-family: "Inter";
@@ -99,6 +154,11 @@ body {
   color: #717171;
   font-size: 45px;
   line-height: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .welcome .welcome-content__title {
+    font-size: 35px;
+  }
 }
 .welcome .welcome-content__title span {
   color: #499A18;
@@ -110,6 +170,13 @@ body {
   font-size: 20px;
   line-height: 35px;
   margin-top: 42px;
+}
+@media screen and (max-width: 1200px) {
+  .welcome .welcome-content__text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 30px;
+  }
 }
 .welcome .welcome-content__button {
   display: flex;
@@ -131,6 +198,11 @@ body {
   background-color: #E06733;
   color: white;
 }
+@media screen and (max-width: 1200px) {
+  .welcome .welcome-content__button {
+    margin-top: 30px;
+  }
+}
 
 .about {
   height: 666px;
@@ -143,6 +215,12 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   padding-top: 93px;
+}
+@media screen and (max-width: 1200px) {
+  .about__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .about__wrapper .about-content {
   padding-top: 68px;
@@ -180,6 +258,12 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   display: block;
+}
+@media screen and (max-width: 1200px) {
+  .service .service-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .service .service-wrapper .title-buttons-box {
   display: flex;
@@ -271,6 +355,12 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   padding-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .prices .prices-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .prices .prices-wrapper .prices-title {
   font-family: "Inter";
@@ -379,6 +469,12 @@ body {
   margin: 0 auto;
   justify-content: space-between;
 }
+@media screen and (max-width: 1200px) {
+  .contacts .contacts-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 .contacts .contacts-wrapper .contacts-woman {
   padding-top: 53px;
 }
@@ -445,6 +541,12 @@ body {
   justify-content: space-between;
   height: 100%;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .footer .footer-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .footer .footer-wrapper .footer-author {
   width: 182px;

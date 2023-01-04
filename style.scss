@@ -10,13 +10,30 @@ $color-border: #e3e1d5;
 $color-bg-btn: #aea1a1;
 $color-bg-btn-light: #d9d9d9;
 
+@mixin tablet {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 760px) {
+    @content;
+  }
+}
+
 @mixin wrapper {
 	display: flex;
 	max-width: 1440px;
 	padding-left:109px;
 	padding-right:109px;
 	margin: 0 auto;
-	justify-content: space-between;	
+	justify-content: space-between;
+  
+  @include tablet {
+    padding-left: 50px;
+	  padding-right: 50px;
+  } 
 }
 
 @mixin btn-dropdown {
@@ -45,15 +62,22 @@ body {
   height: 134px;
   background-color: $color-bg;
 
+  @include tablet {
+    height: 117px;
+  }
+
   &__wrapper {
     @include wrapper;
-    padding-left:111px;
+    // padding-left:111px;
     // align-items: flex-end;
 
     .logo {
       display: flex;
       justify-content: flex-start;
       padding-top: 52px;
+      @include tablet {
+        padding-top: 45px;
+      }
 
 
       &__title {
@@ -71,6 +95,10 @@ body {
       width: 452px;
       line-height: 50px;
       color: $color-nav;
+      
+      @include tablet {
+        padding-top: 35px;
+      }
       // display: flex;
       // align-items: center;
 
@@ -115,17 +143,36 @@ body {
   height: 532px;
   background-color: $color-bg;
 
+  @include tablet {
+    height: auto;
+  }
+
   &__wrapper {
     @include wrapper;
-    padding-top: 62px;        
+    padding-top: 62px;
+    @include tablet {
+      padding-top: 40px;
+      padding-bottom: 70px;
+      flex-direction: row-reverse;
+    }        
   }
 
   &__image {
     width: 449px;
     height: 407px;
 
+    @include tablet {
+      width: 42%;
+      height: auto;
+    }
+
     img {
       transform: translate(-10px, -10px);
+
+      @include tablet {
+        width: 100%;
+        // object-fit: contain;
+      }
     }
   }
 
@@ -133,12 +180,21 @@ body {
     padding-top: 36px;
     width: 549px;
 
+    @include tablet {
+      padding-top: 0px;
+      width: 52%;
+    }
+
     &__title {
       font-family: 'Inter';
       font-weight: 700;
       color: $color-tx-lgray;
       font-size: 45px;
       line-height: 50px;
+
+      @include tablet {
+        font-size: 35px;
+      }
 
       & span {
         color: $color-tx-green;
@@ -152,6 +208,12 @@ body {
       font-size: 20px;
       line-height: 35px;
       margin-top: 42px;
+
+      @include tablet {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 30px;
+      }
     }
 
     &__button {
@@ -173,6 +235,10 @@ body {
       &:hover {
         background-color: $color-tx-brown;
         color: white;
+      }
+
+      @include tablet {
+        margin-top: 30px;
       }
     }
 
@@ -543,10 +609,7 @@ body {
         transform: scale(1.1);
         cursor: pointer;
       }
-
     }
-
   }
-
 }
 
