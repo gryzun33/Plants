@@ -136,6 +136,7 @@ body {
 @media screen and (max-width: 1200px) {
   .welcome__image img {
     width: 100%;
+    transform: translate(0px, 0px);
   }
 }
 .welcome .welcome-content {
@@ -176,6 +177,7 @@ body {
     font-size: 16px;
     line-height: 25px;
     margin-top: 30px;
+    padding-left: 5px;
   }
 }
 .welcome .welcome-content__button {
@@ -200,12 +202,18 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .welcome .welcome-content__button {
-    margin-top: 30px;
+    margin-top: 35px;
   }
 }
 
 .about {
   height: 666px;
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    height: auto;
+    padding-bottom: 95px;
+  }
 }
 .about__wrapper {
   display: flex;
@@ -222,8 +230,20 @@ body {
     padding-right: 50px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .about__wrapper {
+    flex-direction: column;
+    padding-top: 0px;
+    align-items: center;
+  }
+}
 .about__wrapper .about-content {
   padding-top: 68px;
+}
+@media screen and (max-width: 1200px) {
+  .about__wrapper .about-content {
+    padding-top: 40px;
+  }
 }
 .about__wrapper .about-content__title {
   width: 463px;
@@ -232,6 +252,16 @@ body {
   font-size: 40px;
   color: #499A18;
   line-height: 52px;
+}
+@media screen and (max-width: 1200px) {
+  .about__wrapper .about-content__title {
+    width: 63%;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .about__wrapper .about-content__title span {
   color: #E06733;
@@ -245,10 +275,32 @@ body {
   color: #636060;
   margin-top: 38px;
 }
+@media screen and (max-width: 1200px) {
+  .about__wrapper .about-content__text {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__wrapper .about-image {
+    margin-top: 65px;
+    width: 37.5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__wrapper .about-image img {
+    width: 100%;
+  }
+}
 
 .service {
   height: 1300px;
   background-color: #edf2ec;
+}
+@media screen and (max-width: 1200px) {
+  .service {
+    height: auto;
+  }
 }
 .service .service-wrapper {
   display: flex;
@@ -265,9 +317,21 @@ body {
     padding-right: 50px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .service .service-wrapper {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+}
 .service .service-wrapper .title-buttons-box {
   display: flex;
   padding-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .service .service-wrapper .title-buttons-box {
+    padding-top: 0px;
+    flex-direction: column;
+  }
 }
 .service .service-wrapper .title-buttons-box .service-title {
   width: 306px;
@@ -277,12 +341,24 @@ body {
   color: #499A18;
   line-height: 52px;
 }
+@media screen and (max-width: 1200px) {
+  .service .service-wrapper .title-buttons-box .service-title {
+    font-size: 35px;
+    line-height: 45.6px;
+  }
+}
 .service .service-wrapper .title-buttons-box .service-buttons {
   margin-left: 142px;
   padding-top: 29px;
   width: 559px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .service .service-wrapper .title-buttons-box .service-buttons {
+    margin-left: 0;
+    padding-top: 40px;
+  }
 }
 .service .service-wrapper .title-buttons-box .service-buttons__button {
   width: 161px;
@@ -312,12 +388,31 @@ body {
   margin-top: 80px;
   height: 955px;
 }
+@media screen and (max-width: 1200px) {
+  .service .service-wrapper .service-cards {
+    margin-top: 2px;
+    height: auto;
+  }
+}
 .service .service-wrapper .service-cards .service-card {
   display: flex;
   flex-direction: column;
   width: 330px;
   height: 450px;
   border-radius: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .service .service-wrapper .service-cards .service-card {
+    width: 280px;
+    margin-top: 38px;
+  }
+}
+.service .service-wrapper .service-cards .service-card img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
 .service .service-wrapper .service-cards .service-card__text {
   width: 100%;
@@ -343,9 +438,21 @@ body {
   margin-top: 14px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .service .service-wrapper .service-cards .service-card__descr {
+    width: 201px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .prices {
   height: 560px;
+}
+@media screen and (max-width: 1200px) {
+  .prices {
+    height: auto;
+  }
 }
 .prices .prices-wrapper {
   display: flex;
@@ -354,7 +461,8 @@ body {
   padding-right: 109px;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 42px;
+  padding-bottom: 88px;
 }
 @media screen and (max-width: 1200px) {
   .prices .prices-wrapper {
@@ -369,6 +477,13 @@ body {
   line-height: 48px;
   color: #000000;
 }
+@media screen and (max-width: 1200px) {
+  .prices .prices-wrapper .prices-title {
+    padding-left: 15px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+}
 .prices .prices-wrapper .prices-list {
   width: 332px;
   height: 282px;
@@ -379,6 +494,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .prices .prices-wrapper .prices-list {
+    margin-top: 56px;
+  }
 }
 .prices .prices-wrapper .prices-list__item {
   list-style-type: none;
@@ -418,6 +538,11 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
+@media screen and (max-width: 1200px) {
+  .prices .prices-wrapper .prices-help {
+    padding-top: 100px;
+  }
+}
 .prices .prices-wrapper .prices-help .prices-subtitle {
   width: 452px;
   font-family: "Inter";
@@ -428,6 +553,13 @@ body {
 }
 .prices .prices-wrapper .prices-help .prices-subtitle span {
   color: #499A18;
+}
+@media screen and (max-width: 1200px) {
+  .prices .prices-wrapper .prices-help .prices-subtitle {
+    width: 297px;
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 .prices .prices-wrapper .prices-help .prices-button {
   width: 162px;
@@ -452,14 +584,33 @@ body {
   color: white;
   cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+  .prices .prices-wrapper .prices-help .prices-button {
+    margin-top: 27px;
+  }
+}
 .prices .prices-wrapper .prices-help .prices-image {
   margin-top: 35px;
   transform: translateX(9px);
+}
+@media screen and (max-width: 1200px) {
+  .prices .prices-wrapper .prices-help .prices-image {
+    margin-top: 34px;
+    width: 155px;
+    transform: translateX(0px);
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .contacts {
   height: 550px;
   background-color: #edf2ec;
+}
+@media screen and (max-width: 1200px) {
+  .contacts {
+    height: auto;
+  }
 }
 .contacts .contacts-wrapper {
   display: flex;
@@ -475,22 +626,47 @@ body {
     padding-right: 50px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .contacts .contacts-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .contacts .contacts-wrapper .contacts-woman {
   padding-top: 53px;
 }
-.contacts .contacts-wrapper .contacts-title {
+@media screen and (max-width: 1200px) {
+  .contacts .contacts-wrapper .contacts-woman {
+    width: 30%;
+    padding-top: 0;
+    margin-top: 250px;
+    transform: translateX(10px);
+  }
+}
+.contacts .contacts-wrapper .contacts-content {
+  display: flex;
+  flex-direction: column;
+  width: 709px;
+  padding-top: 58px;
+}
+@media screen and (max-width: 1200px) {
+  .contacts .contacts-wrapper .contacts-content {
+    padding-top: 40px;
+    align-items: center;
+    width: auto;
+  }
+}
+.contacts .contacts-wrapper .contacts-content .contacts-title {
   font-family: "Inika";
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
-  margin-top: 60px;
-  padding-left: 43px;
 }
-.contacts .contacts-wrapper .contacts-city-box {
+.contacts .contacts-wrapper .contacts-content .contacts-city-box {
   width: 450px;
   height: 50px;
-  margin-top: 148px;
+  margin-top: 37px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -499,12 +675,18 @@ body {
   background: #d6e7d2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s;
+  align-self: flex-end;
 }
-.contacts .contacts-wrapper .contacts-city-box:hover {
+@media screen and (max-width: 1200px) {
+  .contacts .contacts-wrapper .contacts-content .contacts-city-box {
+    margin-top: 100px;
+  }
+}
+.contacts .contacts-wrapper .contacts-content .contacts-city-box:hover {
   cursor: pointer;
   transform: translateY(-2px);
 }
-.contacts .contacts-wrapper .contacts-city-box .contacts-city {
+.contacts .contacts-wrapper .contacts-content .contacts-city-box .contacts-city {
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
@@ -512,14 +694,14 @@ body {
   letter-spacing: 1px;
   color: #717171;
 }
-.contacts .contacts-wrapper .contacts-city-box .contacts-city-btn {
+.contacts .contacts-wrapper .contacts-content .contacts-city-box .contacts-city-btn {
   width: 16px;
   height: 16px;
   border-radius: 50%;
   text-align: center;
   background-color: #aea1a1;
 }
-.contacts .contacts-wrapper .contacts-city-box .contacts-city-btn span {
+.contacts .contacts-wrapper .contacts-content .contacts-city-box .contacts-city-btn span {
   color: white;
   font-size: 10px;
 }
@@ -531,6 +713,12 @@ body {
   font-size: 20px;
   line-height: 50px;
   color: #000000;
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    height: auto;
+    line-height: 24px;
+  }
 }
 .footer .footer-wrapper {
   display: flex;
@@ -548,11 +736,23 @@ body {
     padding-right: 50px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .footer .footer-wrapper {
+    flex-direction: column;
+    padding-top: 33px;
+    padding-bottom: 28px;
+  }
+}
 .footer .footer-wrapper .footer-author {
   width: 182px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .footer .footer-wrapper .footer-school {
+    margin-top: 16px;
+  }
 }
 .footer .footer-wrapper a {
   transition: color 0.3s;
@@ -569,6 +769,11 @@ body {
   justify-content: space-between;
   list-style-type: none;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .footer .footer-wrapper .footer-links {
+    margin-top: 24px;
+  }
 }
 .footer .footer-wrapper .footer-links li {
   height: 32px;
